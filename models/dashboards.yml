@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: AirBnB Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://ac0a89e9.us2a.app.preset.io/superset/dashboard/p/vb94DR0pM6m/
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Soheil Ebrahimi
+      email: ebrahimisoheil72@gmail.com
